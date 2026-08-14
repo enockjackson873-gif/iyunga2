@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="sw">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mawasiliano | Iyunga Secondary School</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f8fc;
+            color: #333;
+        }
+
+
+        /* ================= HEADER ================= */
+
+        .contact-header {
+            background: linear-gradient(135deg, #063970, #0b7a3b);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .contact-header h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .contact-header p {
+            font-size: 17px;
+        }
+
+
+        /* ================= CONTAINER ================= */
+
+        .contact-container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+
+        /* ================= INTRO ================= */
+
+        .contact-intro {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-intro h2 {
+            color: #063970;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .contact-intro p {
+            color: #555;
+            line-height: 1.8;
+            max-width: 750px;
+            margin: auto;
+        }
+
+
+        /* ================= CONTACT CARDS ================= */
+
+        .contact-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+            border-top: 4px solid #0b7a3b;
+            transition: 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .contact-icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .contact-card h3 {
+            color: #063970;
+            margin-bottom: 12px;
+        }
+
+        .contact-card p {
+            color: #666;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+
+        /* ================= LINKS ================= */
+
+        .contact-card a {
+            color: #0b7a3b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* ================= FACEBOOK ================= */
+
+        .facebook-card {
+            grid-column: span 2;
+            background: #063970;
+            color: white;
+            border-top: none;
+        }
+
+        .facebook-card h3 {
+            color: white;
+        }
+
+        .facebook-card p {
+            color: #e2e8f0;
+        }
+
+        .facebook-card a {
+            color: #7ed957;
+        }
+
+
+        /* ================= MESSAGE ================= */
+
+        .contact-message {
+            margin-top: 30px;
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+            text-align: center;
+        }
+
+        .contact-message h2 {
+            color: #063970;
+            margin-bottom: 15px;
+        }
+
+        .contact-message p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+
+        /* ================= BACK BUTTON ================= */
+
+        .back-button {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .back-button a {
+            display: inline-block;
+            padding: 13px 25px;
+            background: #0b7a3b;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .back-button a:hover {
+            background: #08612f;
+            transform: translateY(-2px);
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 700px) {
+
+            .contact-header h1 {
+                font-size: 32px;
+            }
+
+            .contact-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .facebook-card {
+                grid-column: span 1;
+            }
+
+            .contact-intro,
+            .contact-card,
+            .contact-message {
+                padding: 25px;
+            }
+
+        }
+
+
+        @media (max-width: 500px) {
+
+            .contact-header {
+                padding: 55px 20px;
+            }
+
+            .contact-header h1 {
+                font-size: 29px;
+            }
+
+            .contact-container {
+                margin: 30px auto;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="contact-header">
+
+        <h1>Wasiliana Nasi</h1>
+
+        <p>
+            Tunafurahi kuwasiliana na wazazi, walezi,
+            wanafunzi na wadau wa elimu.
+        </p>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="contact-container">
+
+
+        <!-- INTRO -->
+
+        <section class="contact-intro">
+
+            <h2>Mawasiliano ya Iyunga Secondary School</h2>
+
+            <p>
+                Kwa taarifa zaidi kuhusu shule, elimu, admissions
+                au huduma nyingine zinazohusiana na shule,
+                unaweza kutumia njia zifuatazo za mawasiliano.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT CARDS -->
+
+        <section class="contact-cards">
+
+
+            <!-- PHONE -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">📞</div>
+
+                <h3>Simu</h3>
+
+                <p>
+                    Wasiliana nasi moja kwa moja kupitia simu:
+                </p>
+
+                <p>
+                    <a href="tel:+255756025516">
+                        0756 025516
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- WHATSAPP -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">💬</div>
+
+                <h3>WhatsApp</h3>
+
+                <p>
+                    Kwa mawasiliano kupitia WhatsApp:
+                </p>
+
+                <p>
+                    <a href="https://wa.me/255766968799" target="_blank">
+                        +255 766 968 799
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">✉️</div>
+
+                <h3>Barua Pepe</h3>
+
+                <p>
+                    Tuma ujumbe kupitia barua pepe:
+                </p>
+
+                <p>
+                    <a href="mailto:iyungasecondary@gmail.com">
+                        iyungasecondary@gmail.com
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- ADDRESS -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">📍</div>
+
+                <h3>Anwani</h3>
+
+                <p>
+                    Iyunga Secondary School
+                </p>
+
+                <p>
+                    S.L.P 701, Mbeya
+                </p>
+
+            </div>
+
+
+            <!-- FACEBOOK -->
+
+            <div class="contact-card facebook-card">
+
+                <div class="contact-icon">🔵</div>
+
+                <h3>Facebook</h3>
+
+                <p>
+                    Fuata taarifa na shughuli mbalimbali
+                    zinazohusu Iyunga Secondary School kupitia
+                    akaunti yetu ya Facebook.
+                </p>
+
+                <p>
+                    <a
+                        href="https://www.facebook.com/photo.php?fbid=1089058780108818&set=a.394250209589682&type=3&mibextid=rS40aB7S9Ucbxw6v"
+                        target="_blank">
+
+                        Iyunga Technical F/T Mwl.Modester
+
+                    </a>
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- MESSAGE -->
+
+        <section class="contact-message">
+
+            <h2>Karibu Kuwasiliana Nasi</h2>
+
+            <p>
+                Kwa maswali, taarifa za uandikishaji,
+                taarifa za kielimu au maelezo mengine kuhusu
+                Iyunga Secondary School, tumia mojawapo ya
+                njia za mawasiliano zilizo hapo juu.
+            </p>
+
+        </section>
+
+
+        <!-- BACK BUTTON -->
+
+        <div class="back-button">
+
+            <a href="../index.html">
+                ← Rudi Mwanzo
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>

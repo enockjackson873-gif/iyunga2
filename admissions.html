@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="sw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admissions | Iyunga Secondary School</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7f6;
+            color: #333;
+        }
+
+
+        /* ================= HEADER ================= */
+
+        .admission-header {
+            background: linear-gradient(135deg, #0f766e, #164e63);
+            color: white;
+            text-align: center;
+            padding: 75px 20px;
+        }
+
+        .admission-header h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .admission-header p {
+            font-size: 17px;
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+
+        /* ================= MAIN CONTAINER ================= */
+
+        .admission-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 25px;
+        }
+
+
+        /* ================= MAIN BOX ================= */
+
+        .admission-box {
+            background: white;
+            padding: 45px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .admission-box h2 {
+            color: #164e63;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .admission-box h3 {
+            color: #0f766e;
+            font-size: 21px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        .admission-box p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+
+        /* ================= ADMISSION GRID ================= */
+
+        .admission-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .admission-card {
+            background: #f4f9f8;
+            padding: 28px;
+            border-radius: 14px;
+            border-left: 5px solid #0f766e;
+        }
+
+        .admission-card h3 {
+            margin-top: 0;
+            color: #164e63;
+        }
+
+        .admission-card p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+
+        /* ================= REQUIREMENTS ================= */
+
+        .requirements {
+            margin-top: 25px;
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .requirements ul {
+            padding-left: 22px;
+        }
+
+        .requirements li {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+
+        /* ================= NOTICE ================= */
+
+        .admission-notice {
+            margin-top: 35px;
+            padding: 25px;
+            background: #ecfdf5;
+            border-left: 5px solid #0f766e;
+            border-radius: 10px;
+        }
+
+        .admission-notice strong {
+            color: #164e63;
+        }
+
+        .admission-notice p {
+            margin-bottom: 0;
+        }
+
+
+        /* ================= CONTACT ================= */
+
+        .contact-box {
+            margin-top: 35px;
+            background: #164e63;
+            color: white;
+            padding: 30px;
+            border-radius: 14px;
+        }
+
+        .contact-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .contact-box p {
+            color: #e2e8f0;
+        }
+
+
+        /* ================= BACK BUTTON ================= */
+
+        .back-button {
+            margin-top: 40px;
+        }
+
+        .back-button a {
+            display: inline-block;
+            padding: 13px 25px;
+            background: #0f766e;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .back-button a:hover {
+            background: #115e59;
+            transform: translateY(-2px);
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 800px) {
+
+            .admission-header h1 {
+                font-size: 32px;
+            }
+
+            .admission-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .admission-box {
+                padding: 30px;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .admission-header {
+                padding: 55px 20px;
+            }
+
+            .admission-header h1 {
+                font-size: 29px;
+            }
+
+            .admission-container {
+                margin: 30px auto;
+                padding: 0 15px;
+            }
+
+            .admission-box {
+                padding: 22px;
+            }
+
+            .admission-box h2 {
+                font-size: 25px;
+            }
+
+            .admission-box p {
+                font-size: 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= ADMISSIONS HEADER ================= -->
+
+    <header class="admission-header">
+
+        <h1>Admissions</h1>
+
+        <p>
+            Karibu Iyunga Secondary School.
+            Tunawakaribisha wazazi na wanafunzi wanaotafuta
+            mazingira bora ya elimu, nidhamu na maendeleo.
+        </p>
+
+    </header>
+
+
+    <!-- ================= ADMISSIONS CONTENT ================= -->
+
+    <main class="admission-container">
+
+        <section class="admission-box">
+
+
+            <h2>Uandikishaji wa Wanafunzi</h2>
+
+            <p>
+                Iyunga Secondary School inalenga kuwapatia wanafunzi
+                mazingira bora ya kujifunza na kukua kielimu,
+                kimaadili na kijamii.
+            </p>
+
+            <p>
+                Wazazi na walezi wanaohitaji taarifa kuhusu nafasi
+                za masomo na taratibu za uandikishaji wanashauriwa
+                kuwasiliana na shule kwa maelezo zaidi.
+            </p>
+
+
+            <!-- ================= ADMISSION INFORMATION ================= -->
+
+            <div class="admission-grid">
+
+
+                <div class="admission-card">
+
+                    <h3>📋 Utaratibu wa Kuomba Nafasi</h3>
+
+                    <p>
+                        Mzazi au mlezi anapaswa kupata taarifa sahihi
+                        kuhusu nafasi zinazopatikana na kufuata
+                        utaratibu wa uandikishaji unaotolewa na shule.
+                    </p>
+
+                </div>
+
+
+                <div class="admission-card">
+
+                    <h3>🎓 Sifa za Mwanafunzi</h3>
+
+                    <p>
+                        Mwanafunzi anapaswa kukidhi vigezo vya
+                        uandikishaji vinavyotakiwa kwa kiwango
+                        husika cha masomo.
+                    </p>
+
+                </div>
+
+
+                <div class="admission-card">
+
+                    <h3>📄 Nyaraka Muhimu</h3>
+
+                    <p>
+                        Wazazi au walezi wanapaswa kuandaa nyaraka
+                        zinazohitajika kwa ajili ya uthibitisho
+                        na kukamilisha mchakato wa uandikishaji.
+                    </p>
+
+                </div>
+
+
+                <div class="admission-card">
+
+                    <h3>🏫 Mazingira ya Shule</h3>
+
+                    <p>
+                        Wanafunzi wanaojiunga na shule wanapata
+                        fursa ya kujifunza katika mazingira yanayolenga
+                        kukuza maarifa, nidhamu na vipaji.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ================= REQUIREMENTS ================= -->
+
+            <h3>📌 Nyaraka Zinazoweza Kuhitajika</h3>
+
+            <div class="requirements">
+
+                <ul>
+
+                    <li>
+                        Nyaraka za kitaaluma za mwanafunzi.
+                    </li>
+
+                    <li>
+                        Taarifa muhimu za mzazi au mlezi.
+                    </li>
+
+                    <li>
+                        Kitambulisho au nyaraka nyingine
+                        zinazohitajika kwa uthibitisho.
+                    </li>
+
+                    <li>
+                        Nyaraka nyingine kulingana na maelekezo
+                        ya shule na kiwango cha mwanafunzi.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ================= PROCESS ================= -->
+
+            <h3>📝 Hatua za Uandikishaji</h3>
+
+            <p>
+                <strong>Hatua ya 1:</strong>
+                Pata taarifa kuhusu nafasi na masharti ya uandikishaji.
+            </p>
+
+            <p>
+                <strong>Hatua ya 2:</strong>
+                Andaa nyaraka zinazohitajika kwa ajili ya maombi.
+            </p>
+
+            <p>
+                <strong>Hatua ya 3:</strong>
+                Wasilisha maombi kwa kufuata utaratibu uliowekwa
+                na shule.
+            </p>
+
+            <p>
+                <strong>Hatua ya 4:</strong>
+                Fuata maelekezo ya shule kuhusu hatua zinazofuata
+                baada ya maombi.
+            </p>
+
+
+            <!-- ================= NOTICE ================= -->
+
+            <div class="admission-notice">
+
+                <p>
+                    <strong>📢 Muhimu:</strong>
+                    Taarifa kuhusu nafasi, tarehe za uandikishaji,
+                    ada na mahitaji mengine zinaweza kutegemea
+                    maelekezo ya shule kwa kipindi husika.
+                    Wazazi na walezi wanashauriwa kuthibitisha
+                    taarifa moja kwa moja na shule.
+                </p>
+
+            </div>
+
+
+            <!-- ================= CONTACT ================= -->
+
+            <div class="contact-box">
+
+                <h3>📞 Wasiliana na Shule</h3>
+
+                <p>
+                    Kwa taarifa zaidi kuhusu admissions,
+                    wazazi na walezi wanaweza kuwasiliana
+                    na shule kupitia njia rasmi za mawasiliano.
+                </p>
+
+                <p>
+                    WhatsApp:
+                    <strong>+255 766 968 799</strong>
+                </p>
+
+            </div>
+
+
+            <!-- ================= BACK BUTTON ================= -->
+
+            <div class="back-button">
+
+                <a href="../index.html">
+                    ← Rudi Mwanzo
+                </a>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>

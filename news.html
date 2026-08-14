@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="sw">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News | Iyunga Secondary School</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #e8f5e9;
+            color: #333;
+        }
+
+
+        /* ================= HEADER ================= */
+
+        .news-header {
+            background: linear-gradient(135deg, #0b7a3b, #063970);
+            color: white;
+            text-align: center;
+            padding: 85px 20px;
+        }
+
+        .news-header h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .news-header p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+
+        /* ================= MAIN CONTAINER ================= */
+
+        .news-container {
+            max-width: 1250px;
+            margin: 55px auto;
+            padding: 0 25px;
+        }
+
+
+        /* ================= INTRO ================= */
+
+        .news-intro {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .news-intro h2 {
+            color: #063970;
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .news-intro p {
+            color: #0b5ca8;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+
+        /* ================= FEATURED NEWS ================= */
+
+        .featured-news {
+            background: white;
+            border-radius: 20px;
+            padding: 45px;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.09);
+            border-left: 7px solid #0b7a3b;
+            margin-bottom: 40px;
+        }
+
+        .featured-label {
+            display: inline-block;
+            background: #0b7a3b;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        .featured-news h2 {
+            color: #063970;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .featured-news p {
+            color: #075ca8;
+            line-height: 1.9;
+            font-size: 16px;
+        }
+
+
+        /* ================= NEWS GRID ================= */
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+
+        /* ================= NEWS CARD ================= */
+
+        .news-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+            border-top: 5px solid #0b7a3b;
+            transition: 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        }
+
+        .news-icon {
+            font-size: 40px;
+            margin-bottom: 18px;
+        }
+
+        .news-card h3 {
+            color: #063970;
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .news-date {
+            color: #0b7a3b;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .news-card p {
+            color: #075ca8;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+
+        /* ================= SCHOOL NOTICE ================= */
+
+        .school-notice {
+            margin-top: 45px;
+            background: #0b7a3b;
+            color: white;
+            padding: 40px;
+            border-radius: 18px;
+            text-align: center;
+        }
+
+        .school-notice h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .school-notice p {
+            color: #e8f5e9;
+            line-height: 1.8;
+            max-width: 850px;
+            margin: auto;
+        }
+
+
+        /* ================= MOVING NOTICE ================= */
+
+        .moving-notice {
+            margin-top: 35px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 7px 25px rgba(0,0,0,0.07);
+            display: flex;
+            align-items: center;
+        }
+
+        .notice-title {
+            background: #063970;
+            color: white;
+            padding: 18px 25px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .notice-wrapper {
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+        }
+
+        .notice-text {
+            display: inline-block;
+            padding-left: 100%;
+            animation: moveNews 18s linear infinite;
+            color: #075ca8;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            font-weight: bold;
+        }
+
+        @keyframes moveNews {
+
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+
+        }
+
+
+        /* ================= BACK BUTTON ================= */
+
+        .back-button {
+            text-align: center;
+            margin: 45px 0;
+        }
+
+        .back-button a {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #063970;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .back-button a:hover {
+            background: #0b7a3b;
+            transform: translateY(-2px);
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 900px) {
+
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .news-header h1 {
+                font-size: 38px;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .news-header {
+                padding: 60px 20px;
+            }
+
+            .news-header h1 {
+                font-size: 32px;
+            }
+
+            .news-header p {
+                font-size: 15px;
+            }
+
+            .news-container {
+                margin: 35px auto;
+                padding: 0 15px;
+            }
+
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-news {
+                padding: 28px;
+            }
+
+            .featured-news h2 {
+                font-size: 25px;
+            }
+
+            .school-notice {
+                padding: 28px;
+            }
+
+            .moving-notice {
+                display: block;
+            }
+
+            .notice-title {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="news-header">
+
+        <h1>Habari & Taarifa</h1>
+
+        <p>
+            Karibu kwenye ukurasa wa habari wa Iyunga Secondary School,
+            sehemu ya kupata taarifa muhimu kuhusu shule, wanafunzi,
+            elimu na shughuli mbalimbali.
+        </p>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="news-container">
+
+
+        <!-- INTRO -->
+
+        <section class="news-intro">
+
+            <h2>Habari za Iyunga Secondary School</h2>
+
+            <p>
+                Hapa tunashirikisha taarifa na matukio mbalimbali
+                yanayohusu maendeleo ya shule, mafanikio ya wanafunzi,
+                shughuli za kielimu na maisha ya shule.
+            </p>
+
+        </section>
+
+
+        <!-- FEATURED NEWS -->
+
+        <section class="featured-news">
+
+            <span class="featured-label">
+                HABARI KUU
+            </span>
+
+            <h2>
+                Elimu Bora na Maendeleo ya Wanafunzi
+            </h2>
+
+            <p>
+                Iyunga Secondary School inaendelea kuweka mkazo katika
+                utoaji wa elimu bora na kujenga mazingira yanayomsaidia
+                mwanafunzi kukuza maarifa, nidhamu, vipaji na uwezo wa
+                kufikia malengo yake.
+            </p>
+
+        </section>
+
+
+        <!-- NEWS CARDS -->
+
+        <section class="news-grid">
+
+
+            <!-- NEWS 1 -->
+
+            <article class="news-card">
+
+                <div class="news-icon">📚</div>
+
+                <div class="news-date">
+                    TAARIFA YA ELIMU
+                </div>
+
+                <h3>
+                    Maendeleo ya Kielimu
+                </h3>
+
+                <p>
+                    Wanafunzi wanahimizwa kuendelea kujifunza kwa bidii,
+                    kuhudhuria vipindi kwa wakati na kushiriki kikamilifu
+                    katika masomo yao.
+                </p>
+
+            </article>
+
+
+            <!-- NEWS 2 -->
+
+            <article class="news-card">
+
+                <div class="news-icon">🏆</div>
+
+                <div class="news-date">
+                    SHUGHULI ZA SHULE
+                </div>
+
+                <h3>
+                    Vipaji na Michezo
+                </h3>
+
+                <p>
+                    Shule inahamasisha wanafunzi kushiriki katika michezo,
+                    sanaa na shughuli mbalimbali zinazosaidia kukuza
+                    vipaji na uwezo wao.
+                </p>
+
+            </article>
+
+
+            <!-- NEWS 3 -->
+
+            <article class="news-card">
+
+                <div class="news-icon">🎓</div>
+
+                <div class="news-date">
+                    MAFANIKIO
+                </div>
+
+                <h3>
+                    Mafanikio ya Wanafunzi
+                </h3>
+
+                <p>
+                    Juhudi za wanafunzi, walimu na wazazi zinaendelea
+                    kuchangia katika kujenga msingi mzuri wa maendeleo
+                    ya kielimu na maisha ya mwanafunzi.
+                </p>
+
+            </article>
+
+
+            <!-- NEWS 4 -->
+
+            <article class="news-card">
+
+                <div class="news-icon">👨‍🏫</div>
+
+                <div class="news-date">
+                    WALIMU
+                </div>
+
+                <h3>
+                    Ushirikiano wa Walimu na Wanafunzi
+                </h3>
+
+                <p>
+                    Ushirikiano mzuri kati ya walimu na wanafunzi ni
+                    sehemu muhimu katika kujenga mazingira bora ya
+                    kujifunza na kufikia malengo ya kielimu.
+                </p>
+
+            </article>
+
+
+            <!-- NEWS 5 -->
+
+            <article class="news-card">
+
+                <div class="news-icon">🌱</div>
+
+                <div class="news-date">
+                    MALEZI
+                </div>
+
+                <h3>
+                    Nidhamu na Maadili
+                </h3>
+
+                <p>
+                    Wanafunzi wanahimizwa kuwa na nidhamu, heshima,
+                    uwajibikaji na maadili mema katika shule na jamii.
+                </p>
+
+            </article>
+
+
+            <!-- NEWS 6 -->
+
+            <article class="news-card">
+
+                <div class="news-icon">📢</div>
+
+                <div class="news-date">
+                    TAARIFA
+                </div>
+
+                <h3>
+                    Taarifa za Shule
+                </h3>
+
+                <p>
+                    Taarifa mbalimbali kuhusu shughuli za shule,
+                    matukio na mambo muhimu zitaendelea kushirikishwa
+                    kupitia ukurasa huu.
+                </p>
+
+            </article>
+
+
+        </section>
+
+
+        <!-- SCHOOL NOTICE -->
+
+        <section class="school-notice">
+
+            <h2>
+                📢 Karibu Iyunga Secondary School
+            </h2>
+
+            <p>
+                Endelea kutembelea ukurasa huu ili kupata taarifa
+                mbalimbali kuhusu shughuli, maendeleo na matukio
+                yanayohusu shule.
+            </p>
+
+        </section>
+
+
+        <!-- MOVING NOTICE -->
+
+        <div class="moving-notice">
+
+            <div class="notice-title">
+                TAARIFA
+            </div>
+
+            <div class="notice-wrapper">
+
+                <div class="notice-text">
+
+                    Karibu Iyunga Secondary School
+                    • Elimu Bora
+                    • Nidhamu
+                    • Vipaji
+                    • Michezo
+                    • Maendeleo ya Wanafunzi
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BACK BUTTON -->
+
+        <div class="back-button">
+
+            <a href="../index.html">
+                ← Rudi Mwanzo
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>
