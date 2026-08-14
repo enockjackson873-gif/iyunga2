@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="SW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0">
+        <title>Shule ya sekondari Iyunga</title>
+    </head>
+    <body>
+        <header>
+            <h1>Shule ya sekondari Iyunga</h1>
+            <nav>
+                <a href="index.html">Nyumbani</a>
+                <a href="pages/about.html">Kuhusu sisi</a>
+                <a href="pages/academics.html">Taaluma</a>
+                <a href="pages/admissions.html">Udahili</a>
+                <a href="pages/news.html">Habari</a>
+                <a href="pages/contact.html">Mawasiliano</a>
+            </nav>
+        </header>
+        <section class="hero">
+            <h2>Karibu Shule ya sekondari Iyunga</h2>
+            <p>
+                Tunatoa Elimu bora kwaajili ya kujenga wanafunzi
+                    wenye maarifa, nidhamu na ujuzi wa kujitegemea kwenye maisha ya sayansi na teknolojia.
+            </p>
+        </section>
+<!-- ================= CONTENT SECTION ================= -->
+<section class="content-section">
+
+    <!-- Maandishi yanayotembea -->
+    <div class="moving-text">
+        <div class="moving-track">
+            📢 KARIBU IYUNGA SECONDARY SCHOOL &nbsp;&nbsp; • &nbsp;&nbsp;
+            ELIMU BORA KWA MAENDELEO YA MWANAO &nbsp;&nbsp; • &nbsp;&nbsp;
+            JIFUNZE • JITUME • FANIKIWA &nbsp;&nbsp; • &nbsp;&nbsp;
+            KARIBU KUJIFUNZA NA KUKUA PAMOJA NASI
+        </div>
+    </div>
+
+    <div class="content-container">
+
+        <!-- Kichwa -->
+        <div class="section-heading">
+            <span>KUHUSU SHULE YETU</span>
+            <h2>Iyunga Secondary School</h2>
+            <p>
+                Tunajenga mazingira bora ya kujifunza yanayomsaidia mwanafunzi
+                kukuza maarifa, nidhamu, vipaji na uwezo wa kufikia malengo yake.
+            </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="content-cards">
+
+            <div class="content-card">
+                <div class="icon">🎓</div>
+                <h3>Elimu Bora</h3>
+                <p>
+                    Tunazingatia utoaji wa elimu yenye ubora kwa kuwasaidia
+                    wanafunzi kuelewa masomo yao na kujiandaa kwa maisha ya baadaye.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <div class="icon">📚</div>
+                <h3>Mazingira ya Kujifunza</h3>
+                <p>
+                    Shule inaweka mazingira yanayohamasisha wanafunzi kujifunza,
+                    kushirikiana na kutumia maarifa katika kutatua changamoto.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <div class="icon">🏆</div>
+                <h3>Vipaji na Michezo</h3>
+                <p>
+                    Tunahamasisha wanafunzi kushiriki katika michezo, sanaa,
+                    klabu na shughuli mbalimbali zinazokuza vipaji vyao.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <div class="icon">🌱</div>
+                <h3>Nidhamu na Maadili</h3>
+                <p>
+                    Tunawajenga wanafunzi kuwa na nidhamu, uwajibikaji,
+                    heshima na maadili mema katika jamii.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Taarifa inayotembea -->
+        <div class="notice-box">
+            <div class="notice-title">📢 TAARIFA</div>
+
+            <div class="notice-wrapper">
+                <div class="notice-text">
+                    Wanafunzi wote wanahimizwa kuzingatia ratiba ya masomo,
+                    kuhudhuria vipindi kwa wakati na kushiriki kikamilifu
+                    katika shughuli za shule.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CSS ================= -->
+<style>
+
+.content-section {
+    width: 100%;
+    padding: 70px 20px;
+    background: #f5f8fc;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* MAANDISHI YANAYOTEMBEA */
+.moving-text {
+    width: 100%;
+    overflow: hidden;
+    background: #063970;
+    color: white;
+    padding: 14px 0;
+    margin-bottom: 55px;
+    white-space: nowrap;
+}
+
+.moving-track {
+    display: inline-block;
+    padding-left: 100%;
+    animation: moveText 20s linear infinite;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* CONTAINER */
+.content-container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* HEADING */
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading span {
+    color: #0b7a3b;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    margin: 10px 0;
+    font-size: 38px;
+    color: #063970;
+}
+
+.section-heading p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* CARDS */
+.content-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.content-card {
+    background: white;
+    padding: 28px 22px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+    transition: 0.3s ease;
+    border-top: 4px solid #0b7a3b;
+}
+
+.content-card:hover {
+    transform: translateY(-8px);
+}
+
+.icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.content-card h3 {
+    color: #063970;
+    margin-bottom: 12px;
+}
+
+.content-card p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.content-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0b7a3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* TAARIFA */
+.notice-box {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.notice-title {
+    background: #0b7a3b;
+    color: white;
+    padding: 18px 25px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.notice-wrapper {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.notice-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: noticeMove 18s linear infinite;
+    color: #444;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+@keyframes noticeMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .content-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .content-section {
+        padding: 50px 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .content-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .notice-box {
+        display: block;
+    }
+
+    .notice-title {
+        text-align: center;
+    }
+}
+</style>
+<!-- ================= PROFESSIONAL FOOTER ================= -->
+<footer class="school-footer">
+
+    <div class="footer-container">
+
+        <!-- ABOUT SCHOOL -->
+        <div class="footer-column">
+            <h3>Iyunga Secondary School</h3>
+
+            <p>
+                Tunajenga kizazi chenye maarifa, nidhamu, ujuzi
+                na maadili bora kwa maendeleo ya jamii.
+            </p>
+
+            <p class="school-motto">
+                <strong>Jifunze • Jitume • Fanikiwa</strong>
+            </p>
+        </div>
+
+
+        <!-- QUICK LINKS -->
+        <div class="footer-column">
+            <h3>Viungo Muhimu</h3>
+
+            <a href="#">Mwanzo</a>
+            <a href="#">Kuhusu Sisi</a>
+            <a href="#">Masomo</a>
+            <a href="#">Shughuli za Shule</a>
+            <a href="#">Mawasiliano</a>
+        </div>
+
+
+        <!-- CONTACT -->
+        <div class="footer-column">
+            <h3>Mawasiliano</h3>
+
+            <p>
+                📍 S.L.P 701, Mbeya
+            </p>
+
+            <p>
+                📞
+                <a href="tel:+255756025516">
+                    0756 025516
+                </a>
+            </p>
+
+            <p>
+                💬
+                <a href="https://wa.me/255766968799" target="_blank">
+                    WhatsApp: +255 766 968 799
+                </a>
+            </p>
+
+            <p>
+                ✉️
+                <a href="mailto:iyungasecondary@gmail.com">
+                    iyungasecondary@gmail.com
+                </a>
+            </p>
+        </div>
+
+
+        <!-- SOCIAL MEDIA -->
+        <div class="footer-column">
+            <h3>Tufuate</h3>
+
+            <p>
+                Fuata taarifa na shughuli mbalimbali
+                zinazohusu shule kupitia Facebook.
+            </p>
+
+            <a
+                href="https://www.facebook.com/photo.php?fbid=1089058780108818&set=a.394250209589682&type=3&mibextid=rS40aB7S9Ucbxw6v"
+                target="_blank"
+                class="facebook-link">
+                Facebook
+            </a>
+
+            <a
+                href="https://www.facebook.com/photo.php?fbid=1089058780108818&set=a.394250209589682&type=3&mibextid=rS40aB7S9Ucbxw6v"
+                target="_blank"
+                class="facebook-name">
+                Iyunga Technical F/T Mwl.Modester
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Iyunga Secondary School.
+            Haki zote zimehifadhiwa.
+        </p>
+
+        <p>
+            Elimu • Nidhamu • Maendeleo
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= FOOTER CSS ================= -->
+<style>
+
+.school-footer {
+    background: #063970;
+    color: white;
+    padding-top: 55px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* MAIN FOOTER CONTAINER */
+.footer-container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 25px 45px;
+
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1.3fr 1.2fr;
+    gap: 45px;
+}
+
+
+/* FOOTER HEADINGS */
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+/* FOOTER TEXT */
+.footer-column p {
+    color: #dce7f2;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0 0 12px;
+}
+
+
+/* SCHOOL MOTTO */
+.school-motto {
+    margin-top: 20px !important;
+    color: #ffffff !important;
+}
+
+
+/* LINKS */
+.footer-column a {
+    display: block;
+    color: #dce7f2;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 12px;
+    transition: 0.3s ease;
+}
+.footer-column a:hover {
+    color: #7ed957;
+    padding-left: 5px;
+}
+
+
+/* FACEBOOK */
+.facebook-link {
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+.facebook-name {
+    color: #7ed957 !important;
+    line-height: 1.5;
+}
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    max-width: 1150px;
+    margin: auto;
+
+    padding: 20px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+    color: #cbd8e5;
+    font-size: 13px;
+}
+
+@media (max-width: 900px) {
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .school-footer {
+        padding-top: 40px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 20px 35px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+}
+
+</style>
+```
+
+            </body>
+            </html>
